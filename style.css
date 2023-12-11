@@ -1,0 +1,204 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+/* CABEÇALHO */
+
+header{
+    position: fixed;
+    display: flex;
+    background-color: rgba(204, 24, 24, 0.911);
+    width: 100vw;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+header img{
+    height: 80px;
+    padding: 15px;
+    padding-left: 100px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    padding-right: 100px;
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    font-family: 'Rubik Bubbles';
+}
+
+/* SOBRE */
+
+.sobre video{
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    opacity: 0.3;
+    z-index: -50;
+}
+
+body .mobile{
+    display: none;
+    position: absolute;
+}
+
+.caixa_maior_sobre{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 250px 190px;
+}
+
+.caixa_sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    max-width: 950px;
+}
+
+.sobre img{
+    height: 500px;
+}
+
+.sobre h1{
+    font-family: 'Rubik Bubbles';
+    font-size: 60px;
+}
+
+.sobre p{
+    font-size: 25px;
+    font-family: 'Nunito';
+}
+
+/* FAÇA SEU PEDIDO */
+
+.cardapio{
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #333;
+    z-index: 1;
+}
+
+.titulo {
+    font-size: 80px;
+    font-family: 'Rubik Bubbles';
+    color: white;
+    padding-top: 170px;
+}
+
+.cardapio ul{
+    display: flex;
+    gap: 80px;
+    padding: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardapio .calabresa, .frango, .chocolate, a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.caixa_menor{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+}
+
+.caixa_menor h1{
+    font-size: 45px;
+    font-family: 'Rubik Bubbles';
+}
+
+.caixa_menor .texto{
+    font-size: 20px;
+    font-family: 'Nunito';
+}
+
+.caixa_menor .preco{
+    font-size: 35px;
+    font-family: 'DS-Digital', sans-serif;
+}
+
+.frango, .calabresa, .chocolate{
+    background-color: white;
+    width: 700px;
+    height: 900px;
+    border-radius: 25px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+
+a img{
+    height: 400px;
+}
+
+/* RODAPE */
+
+.rodape{
+    background-color:  rgba(204, 24, 24, 0.911);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-top: 1px solid white;
+	padding-top: 20px;
+}
+.rodape_titulo{
+	font-size: 35px;
+    font-family: 'Nunito';
+}
+
+.rodape_texto{
+	color: rgb(175, 175,175);
+    margin-top: 8px;
+	font-size: 30px;
+    font-family: 'Nunito';
+}
+
+.rodape_dev{
+	font-size: 20px;
+    font-family: 'Nunito';
+	align-self: flex-end;
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(00px);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
